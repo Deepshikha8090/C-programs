@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int arr[10],i,n,j,max;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        max=arr[i];
+        for(j=1;j<n;j++)
+        {
+            if(arr[j]>max)
+            {
+                max=arr[j];
+            }
+        }
+    }
+    printf("%d",max);
+    return 0;
+}
