@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,r,org,s=0;
+    printf("Enter the number=");
+    scanf("%d",&num);
+    org=num;
+    while(num>0)
+    {
+    r=num%10;
+    s=(s*10)+r;
+    //printf("%d",r);
+    num=num/10;
+    }
+    if(org==s)
+    
+        printf("rhe number is palindrome");
+    
+    else
+    
+    printf("the numbr is not s palinfrome");
+    
+    return (0);
+}
