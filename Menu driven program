@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+    int n,Factorial=1,i,power,r,d,sum=0,res;
+    
+    printf("Enter your choice\n");
+    printf("Press-1 Factorial\n");
+    printf("Press-2 Power\n");
+    printf("Press-3 Sum of digits\n");
+    scanf("%d",&d);
+    switch(d)
+    {
+           case 1: 
+                printf("Enter the number");
+                scanf("%d",&n);
+                for(i=1;i<=n;i++)
+                {
+                Factorial=Factorial*i;
+                    
+                }
+                printf("%d",Factorial);
+                break;
+                
+           case 2:  
+                 printf("Enter the base value");
+                 scanf("%d",&n);
+                 printf("enter the exponent value");
+                 scanf("%d",&power);
+                 res=pow(n,power);
+        
+                printf("%d",res);
+                break;
+                
+           case 3: 
+                printf("Enter the number");
+                scanf("%d",&n);
+        
+        
+                while(n>0)
+               {
+                r=n%10;
+                sum=sum+r;
+                n=n/10;
+            
+               }
+                printf("%d",sum);
+               
+                break;
+        default:
+                printf("wrong selection");
+    }
+                
+    return(0);
+    
+}
